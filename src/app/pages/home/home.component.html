@@ -1,0 +1,60 @@
+<main class="main">
+  <section class="main__profile">
+    <h1 class="main__logo">Dashboard</h1>
+    <div class="main__user">
+      <div>
+        <div class="main__user-image"></div>
+      </div>
+      <strong class="main__user-name">
+        John Doe
+      </strong>
+      <span class="main__user-role">CEO</span>
+    </div>
+    <nav>
+      <ul class="main__menu">
+        <li>
+          <button mat-raised-button>
+            <mat-icon [icIcon]="icHome"></mat-icon>
+            <span>Dashboard</span>
+          </button>
+        </li>
+        <li>
+          <button mat-raised-button>
+            <mat-icon [icIcon]="icPeople"></mat-icon>
+            <span>Customers</span>
+          </button>
+        </li>
+        <li>
+          <button mat-raised-button>
+            <mat-icon [icIcon]="icHat"></mat-icon>
+            <span>Solutions</span>
+          </button>
+        </li>
+        <li>
+          <button mat-raised-button>
+            <mat-icon [icIcon]="icSettings"></mat-icon>
+            <span>Settings</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <button class="main__exit-button">
+      <mat-icon [icIcon]="icLeave"></mat-icon>
+      <span>Exit</span>
+    </button>
+  </section>
+  <section class="main__dashboard">
+    <div class="main__chart">
+      <app-chart [type]="'line'"></app-chart>
+    </div>
+    <div class="main__chart">
+      <app-chart [type]="'bar'"></app-chart>
+    </div>
+    <div class="main__chart">
+      <app-chart [type]="'pie'"></app-chart>
+    </div>
+    <div class="main__chart">
+      <app-chart [type]="'area'"></app-chart>
+    </div>
+  </section>
+</main>
